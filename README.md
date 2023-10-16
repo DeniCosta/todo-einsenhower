@@ -2,7 +2,7 @@
 
 Este é um projeto de um site de organização de tarefas (to-do list) construído com React JS, JavaScript e Styled Components.
 
-![Página Inicial]()
+![Página Inicial](/preview.png)
 
 ## Descrição
 
@@ -19,14 +19,20 @@ Este é um projeto de um site de organização de tarefas (to-do list) construí
 
 ## Como Testar
 
-Você pode acessar o projeto online aqui: [To-Do List App](https://tasks-app-aridsm.netlify.app/](https://tasks-app-aridsm.netlify.app/)
+Você pode acessar o projeto online aqui: [To-Do List App](https://denicosta.github.io/todo-einsenhower/)
 
 Ou, se preferir, pode rodá-lo localmente em sua máquina:
 
 ```bash
 git clone "https://github.com/DeniCosta/todo-einsenhower.git"
+```
+```bash
 cd todo-app
+```
+```bash
 npm install
+```
+```bash
 npm run dev
 ```
 
