@@ -26,7 +26,7 @@ const ListStyled = styled.div`
     width:90%;
     background-color: #fff8cc;
     padding: 15px;
-    margin: 0 auto 15px auto;
+    margin: 10px auto 15px auto;
   }
 
   .labelToDo img {
