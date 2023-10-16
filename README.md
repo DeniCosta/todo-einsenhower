@@ -19,7 +19,7 @@ Este é um projeto de um site de organização de tarefas (to-do list) construí
 
 ## Como Testar
 
-Você pode acessar o projeto online aqui: [To-Do List App](https://denicosta.github.io/todo-einsenhower/)
+Você pode acessar o projeto online aqui: [To-Do List App](https://todo-einsenhower.vercel.app/)
 
 Ou, se preferir, pode rodá-lo localmente em sua máquina:
 
