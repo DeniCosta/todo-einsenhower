@@ -4,14 +4,9 @@ import { CheckButtonStyled } from "../../../../commons/checkButton/checkButton.s
 import { MdCheck } from "react-icons/md";
 import { MdDeleteOutline } from "react-icons/md";
 
-const Task = ({ id, title, removeTask }) => {
-  const [isCompleted, setIsCompleted] = useState(false);
+const Task = ({ id, title, isCompleted, toggleItemCompleted, removeTask }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTitle, setEditedTitle] = useState(title);
-  
-  const handleCompleteClick = () => {
-    setIsCompleted(!isCompleted);
-  };
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -27,7 +22,7 @@ const Task = ({ id, title, removeTask }) => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
-      handleSaveEdit(); // Salva as alterações ao pressionar "Enter"
+      handleSaveEdit();
     }
   };
 
@@ -35,7 +30,7 @@ const Task = ({ id, title, removeTask }) => {
     <ItemStyled>
       <CheckButtonStyled
         isCompleted={isCompleted}
-        onClick={handleCompleteClick}
+        onClick={() => toggleItemCompleted(id)}
       >
         <MdCheck />
       </CheckButtonStyled>
@@ -45,7 +40,7 @@ const Task = ({ id, title, removeTask }) => {
           value={editedTitle}
           onChange={handleTitleChange}
           onBlur={handleSaveEdit}
-          onKeyDown={handleKeyDown} // Salva as alterações ao pressionar "Enter"
+          onKeyDown={handleKeyDown}
           autoFocus
         />
       ) : (
