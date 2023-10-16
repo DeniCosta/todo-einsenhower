@@ -3,6 +3,7 @@ import ListStyled from "./list.styles";
 import AddToDoButton from "../form/AddTask";
 import Task from "../item/Task";
 import Search from "../../../../commons/filtros/search/Search";
+import Filter from "../../../../commons/filtros/filters/Filter";
 
 const List = () => {
   const [tasks, setTasks] = useState(
@@ -36,6 +37,8 @@ const List = () => {
 
   const [search, setSearch] = useState("");
 
+  const [filter, setFilter] = useState("All");
+
   return (
     <>
       <ListStyled>
@@ -54,8 +57,10 @@ const List = () => {
 
           <div className="container">
             <div className="listContainer">
+              <Filter filter={filter} setFilter={setFilter} />
               <ul>
                 {tasks
+                  .filter((task) => filter === "All"? true : filter === "Completed" ? task.isCompleted : !task.isCompleted )
                   .filter((task) =>
                     task.title.toLowerCase().includes(search.toLowerCase())
                   )
