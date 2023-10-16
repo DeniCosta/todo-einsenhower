@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import GlobalStyle from './styles/GloblalStyles'
+import React from "react";
+import GlobalStyle from "./styles/GloblalStyles";
+import List from "./components/views/landingpage/todoList/list/List";
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-   <GlobalStyle/>
-  )
-}
+    <>
+      <List />
+      <GlobalStyle />
+    </>
+  );
+};
 
-export default App
+export default App;
