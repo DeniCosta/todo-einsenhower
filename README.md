@@ -2,7 +2,7 @@
 
 Este é um projeto de um site de organização de tarefas (to-do list) construído com React JS, JavaScript e Styled Components.
 
-![Página Inicial](/preview.png)
+![Página Inicial](./public/preview.png)
 
 ## Descrição
 
