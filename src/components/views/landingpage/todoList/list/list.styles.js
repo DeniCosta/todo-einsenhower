@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const ListStyled = styled.div`
-  padding-top: 10px;
   height:100%;
 
   .main {
@@ -41,7 +40,7 @@ const ListStyled = styled.div`
   .listContainer {
     border: 3px dashed #301141;
     border-radius: 10px;
-    padding-top: 40px;
+    padding-top: 10px;
     height: 100%;
   }
 
