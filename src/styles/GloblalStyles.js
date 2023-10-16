@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+  
   * {
     margin: 0;
     padding: 0;
@@ -11,16 +11,29 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    
   }
 
   body {
     font: 14px 'Lato', sans-serif;
-    background: #ecf1f8;
-    color: #333;
+    background-color: #FFFEF5;
+    color: #301141;
     -webkit-font-smoothing: antialiased !important;
+    margin: 0 auto;
+    border: solid #F2CAE1 1em;
   }
 
   ul {
     list-style: none;
   }
+
+  input::placeholder{
+color:#725284;
+  }
+input{
+  border: 1px solid #725284;
+  border-radius: 2px;
+  margin-right: 5px;
+  padding: 2px;
+}
 `;
